@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+
+@font-face
+{
+	font-family: kuhlmisc;
+	src: url('../fonts/kuhlmisc.ttf'),
+	     url('Sansation_Light.eot'); /* IE9 */
+}
+@font-face
+{
+	font-family: kuhltom;
+	src: url('../fonts/kuhltom.ttf'),
+	     url('Sansation_Light.eot'); /* IE9 */
+}
+
+.introjs-tooltiptext{
+	font-family: kuhltom;
+	font-size: 25px;
+	font-weight: bold;
+}
+.introjs-tooltip {
+	 min-width: 400px !important;
+	 border: none !important;
+	 color: #FFFFFF !important;
+	 background-color: transparent !important;
+	 box-shadow: none !important;
+}
