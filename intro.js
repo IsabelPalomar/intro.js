@@ -303,24 +303,27 @@
     switch (currentTooltipPosition) {
       case 'top':
         tooltipLayer.style.left = '15px';
-        tooltipLayer.style.top = '-' + (_getOffset(tooltipLayer).height + 10) + 'px';
+        tooltipLayer.style.top = '-' + (_getOffset(tooltipLayer).height + 10 + 20) + 'px';
         arrowLayer.className = 'introjs-arrow bottom';
+        arrowLayer.innerHTML = '<span class="fancy-arrow-top">p</span>';
         break;
       case 'right':
         tooltipLayer.style.left = (_getOffset(targetElement).width + 20) + 'px';
         arrowLayer.className = 'introjs-arrow left';
+        arrowLayer.innerHTML = '<span class="fancy-arrow-top">n</span>';
         break;
       case 'left':
         tooltipLayer.style.top = '15px';
         tooltipLayer.style.right = (_getOffset(targetElement).width + 20) + 'px';
         arrowLayer.className = 'introjs-arrow right';
+        arrowLayer.innerHTML = '<span class="fancy-arrow-top">m</span>';
         break;
       case 'bottom':
       // Bottom going to follow the default behavior
       default:
-        tooltipLayer.style.bottom = '-' + (_getOffset(tooltipLayer).height + 10) + 'px';
+        tooltipLayer.style.bottom = '-' + (_getOffset(tooltipLayer).height + 10 + 60) + 'px';
         arrowLayer.className = 'introjs-arrow top';
-        //arrowLayer.innerHTML = '<span>sample</span>';
+        arrowLayer.innerHTML = '<span class="fancy-arrow-top">w</span>';
         break;
     }
   }

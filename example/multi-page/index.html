@@ -50,7 +50,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue a neque cursus ac blandit orci faucibus. Phasellus nec metus purus.</p>
           </div>
 
-        <div class="span6" data-step="3" data-intro="More features, more fun."  data-position='left'>
+        <div class="span6" data-step="3" data-intro="More features, more fun."  data-position='top'>
           <h4>Section Four</h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis augue a neque cursus ac blandit orci faucibus. Phasellus nec metus purus.</p>
 
@@ -64,11 +64,12 @@
     </div>
     <script type="text/javascript" src="../../intro.js"></script>
     <script type="text/javascript">
-      document.getElementById('startButton').onclick = function() {
-        introJs().setOption('doneLabel', 'Next page').start().oncomplete(function() {
+     // document.getElementById('startButton').onclick = function() {
+    	// introJs().setOptions({ doneLabel: "Next page", exitOnOverlayClick: false });
+         introJs().setOptions({ doneLabel: "Next page", exitOnOverlayClick: false }).start().oncomplete(function() {
           window.location.href = 'second.html?multipage=true';
         });
-      };
+     // };
     </script>
   </body>
 </html>

@@ -17,6 +17,7 @@
 	font-family: kuhltom;
 	font-size: 25px;
 	font-weight: bold;
+	padding-left: 52px;
 }
 .introjs-tooltip {
 	 min-width: 400px !important;
@@ -24,4 +25,27 @@
 	 color: #FFFFFF !important;
 	 background-color: transparent !important;
 	 box-shadow: none !important;
+     padding: 20px !important;
+}
+.fancy-arrow-top{
+     font-family: kuhlmisc;
+}
+
+.introjs-arrow.top {
+	top: -24px !important;
+	font-size: 47px !important;
+    border-bottom-color:  transparent !important;
+}
+
+.introjs-arrow.left {
+	font-size: 47px !important;
+    border-right-color:  transparent !important;
+}
+.introjs-arrow.right {
+    font-size: 47px !important;
+	border-left-color: transparent !important;
+}
+.introjs-arrow.bottom {
+	font-size: 47px !important;
+	border-top-color: transparent !important;
 }
